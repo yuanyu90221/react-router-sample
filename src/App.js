@@ -11,13 +11,13 @@ function App() {
       <MainHeader />
       <main>
         <Routes>
-          <Route path='/welcome' children={Welcome}>
+          <Route path='/welcome' element={<Welcome/>}>
             {/* <Welcome /> */}
           </Route>
-          <Route path='/products' exact children={Products}>
+          <Route path='/products' exact element={<Products/>}>
             {/* <Products /> */}
           </Route>
-          <Route path='/products/:productId' children={ProductDetail}>
+          <Route path='/products/:productId' element={<ProductDetail/>}>
             {/* <ProductDetail /> */}
           </Route>
         </Routes>
